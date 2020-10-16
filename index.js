@@ -59,7 +59,7 @@ client.connect(err => {
     })
 
     app.post('/userReview', (req, res) => {
-        userReview.insertOne(req.body)
+        feedback.insertOne(req.body)
             .then(result => res.send(result))
     })
 
